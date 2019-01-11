@@ -13,7 +13,7 @@ steamrollArray([1, {}, [3, [[4]]]]); // return [1, {}, 3, 4]
 
 /************  Solution #2     *******************************************************************************************/
 
-function steamrollArray(arr) {
+function steamrollArray2(arr) {
  // Firstly turn the array to a string of numbers seperated by a comma, 
  //  double comma if there was an empty array and literal object text if there was an object
   return arr.toString().replace(',,', ',')  // "1,2,,3" => "1,2,3"
