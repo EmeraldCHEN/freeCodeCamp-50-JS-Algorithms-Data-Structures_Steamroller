@@ -9,8 +9,8 @@ function steamrollArray(arr) {
 // The some() method tests whether at least one element in the array passes the test implemented by the provided function.
 
 steamrollArray([[["a"]], [["b"]]]); // return ["a", "b"]
-
-
+steamrollArray([1, [], [3, [[4]]]]); // return [1, 3, 4]
+steamrollArray([1, {}, [3, [[4]]]]); // return [1, {}, 3, 4]
 
 
 
